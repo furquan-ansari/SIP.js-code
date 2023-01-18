@@ -1,0 +1,15 @@
+{
+  "name": "sip_code_using_api_practice",
+  "version": "1.0.0",
+  "description": "To create sip by using api",
+  "main": "./lib/index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Furquan Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "sip.js": "^0.21.2"
+  }
+}

@@ -1,0 +1,21 @@
+audio{
+    margin: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    width: 100px;
+    margin: 8px;
+}
+input{
+    margin: 8px;
+}
+.dtmf{
+    margin: 8px;
+}
+code{
+    background-color: #eee;
+}

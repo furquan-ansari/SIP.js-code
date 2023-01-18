@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIP DEMO-1</title>
+    <link rel="stylesheet" type="text/css" href="./demo1.css" />
+  </head>
+  <body>
+    <h2>Demo: Vido Call - Between Only Two Users</h2>
+    <div>
+      When this page was loaded,a <code>SimpleUser</code> was created for two
+      users - Alice & Bob
+    </div>
+
+    <div class="content">
+      <div id="alice" class="user">
+        <h4>Alice</h4>
+        <div class="video">
+          <video id="videoRemoteAlice" width="100%" muted="muted">
+            <p>Your browser doesn't support HTML5 video</p>
+          </video>
+          <div class="video-local">
+            <video id="videoLocalAlice" width= "100%" muted="muted" >
+              <p>Your browser doesn't support HTML5 video</p>
+            </video>
+          </div>
+        </div>
+      
+      <ol>
+        <li><button id="connectAlice" disabled>Connect</button></li>
+        <li><button id="registerAlice" disabled>Register User</button></li>
+        <li>
+          <button id="beginAlice" disabled>Initiate Video Session</button>
+        </li>
+        <li><button id="endAlice" disabled>End Video Session</button></li>
+        <li><button id="unregisterAlice" disabled>Unregister</button></li>
+        <li><button id="disconnectAlice" disabled>Disconnect</button></li>
+      </ol>
+      <div>
+        <input type="checkbox" name="holdAlice" id="holdAlice" disabled />
+        <label for="holdAlice">Hold</label>
+      </div>
+      <div>
+        <input type="checkbox" name="muteAlice" id="muteAlice" disabled />
+        <label for="muteAlice">Mute</label>
+      </div>
+    </div>
+    
+    <div id="bob" class="user">
+        <h4>Bob</h4>
+        <div class="video">
+          <video id="videoRemoteBob" width="100%" muted="mute">
+            <p>Your Browser doesn't support HTML5 video</p>
+          </video>
+          <div class="video-local">
+            <video id="videoLocalBob" width="100%" muted="muted">
+              <p>Your Browser doesn't support HTML5 video</p>
+            </video>
+          </div>
+        </div>
+        <ol>
+          <li><button id="connectBob" disabled>Connect</button></li>
+          <li><button id="registerBob" disabled>Register User</button></li>
+          <li>
+            <button id="beginBob" disabled>Initiate Video Session</button>
+          </li>
+          <li><button id="endBob" disabled>End Video Session</button></li>
+          <li><button id="unregisterBob" disabled>Unregister</button></li>
+          <li><button id="disconnectBob" disabled>Disconnect</button></li>
+        </ol>
+        <div>
+            <input type="checkbox" name="holdBob" id="holdBob" disabled/>
+            <label for="holdBob">Hold</label>
+        </div>
+        <div>
+            <input type="checkbox" name="muteBob" id="muteBob" disabled/>
+            <label for="muteBob">Mute</label>
+        </div>
+      </div>
+    </div>
+    
+    <script type= "module" src="./demo1.js"></script>
+  </body>
+</html>
+
+ 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIP DEMO</title>
+    <link rel="stylesheet" type="text/css" href="" />
+  </head>
+
+  <body>
+    <h2>Demo: Audio Call</h2>
+    <ol>
+      <li>
+        <button id="connect" disabled>Connect</button> with
+        <code><span id="server"></span></code>
+      </li>
+      <li>
+        <button id="call" disabled>Please Call</button> with
+        <code><span id="target"></span></code>
+      </li>
+      <li><button id="hangup" disabled>Hangup Call</button></li>
+      <li><button id="disconnect" disabled>Disconnect</button></li>
+    </ol>
+    <p>After Establisment of call an audio call is added</p>
+    <audio id="remoteAudio" controls></audio>
+
+    <p>
+      While the call is established, DTMF may be sent using the followin
+      "KeyPad"
+    </p>
+    <div class="dtmf">
+      DTMF sent
+      <span id="dtmf"></span>
+    </div>
+
+    <div>
+<div>
+    <button class="keypad" disabled>1</button>
+    <button class="keypad" disabled>2</button>
+    <button class="keypad" disabled>3</button>
+</div>
+<div>
+    <button class="keypad" disabled>4</button>
+    <button class="keypad" disabled>5</button>
+    <button class="keypad" disabled>6</button>
+</div>
+<div>
+    <button class="keypad" disabled>7</button>
+    <button class="keypad" disabled>8</button>
+    <button class="keypad" disabled>9</button>
+</div>
+<div>
+    <button class="keypad" disabled>*</button>
+    <button class="keypad" disabled>0</button>
+    <button class="keypad" disabled>9</button>
+</div>
+
+    </div>
+<p>While call is established the session may placed on hold or muted</p>
+<div>
+<input type="checkbox" name="hold" id="hold" disabled>
+<label for="hold">Hold</label>
+</div>
+<div>
+<input type="checkbox" name="mute" id="mute" disabled>
+<label for="mute">Mute</label>
+</div>
+
+<script type = 'module' src="./demo.js"></script>
+<script src="../sip-0.16.0.js"></script>
+<script src="./demo_func.js"></script>
+
+  </body>
+</html>
